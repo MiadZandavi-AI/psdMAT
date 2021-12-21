@@ -63,7 +63,7 @@ for i = 1:length(File_name)
     
     y_bal(idx_0)   = [];
     x_bal(:,idx_0) = [];
-    x_bal(idy_0)   = [];
+    x_bal(idy_0,:)   = [];
     
     
     [count,label] = hist(categorical(y_bal),unique(y_bal));
