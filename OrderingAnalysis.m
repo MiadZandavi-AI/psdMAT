@@ -53,7 +53,7 @@ idy_0 = sum(x_bal,2) ==0;
 
 y_bal(idx_0)   = [];
 x_bal(:,idx_0) = [];
-x_bal(idy_0)   = [];
+x_bal(idy_0,:)   = [];
 
 [count,label] = hist(categorical(y_bal),unique(y_bal));
 

@@ -90,7 +90,6 @@ end
 CVModel = crossval(Model, 'kfold',5);
 pred_train = kfoldPredict(CVModel);
 
-[Class,~] = unique(YTrain);
 
 cp_train = classperf(YTrain, pred_train);
 
